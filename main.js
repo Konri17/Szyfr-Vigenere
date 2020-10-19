@@ -56,7 +56,7 @@ var DomController = {
     }
     for (target in values) {
       if (values[target] !== values.flg) {
-        if (values[target].match(/[^A-Z]/i) || values[target] == "") {
+        if (values[target].match(/[^(A-Z\s)]/i) || values[target] == "") {
           values.flg = false;
         }
       }
